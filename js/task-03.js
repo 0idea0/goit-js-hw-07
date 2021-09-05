@@ -18,7 +18,7 @@ ulEl.classList.add('list_images');
 console.log(ulEl);
 
 const itemEl = ({ url, alt }) => {
-  return `<li><img class = "item_images" src = ${url} alt = ${alt}><li>`;
+  return `<li><img class = "item_images" src = ${url} alt = ${alt} width="450px" height="300px"><li>`;
 };
 
 const listEl = images.map(itemEl).join('');
@@ -26,3 +26,9 @@ console.log(listEl);
 
 ulEl.insertAdjacentHTML('beforeend', listEl);
 
+gallery.insertAdjacentHTML('afterbegin',createEl(images));
+gallery.style.marginTop = '20px';
+gallery.style.display = 'flex';
+gallery.style.justifyContent = 'space-between';
+gallery.style.padding = '0';
+gallery.style.listStyle = 'none';
