@@ -26,9 +26,9 @@ console.log(listEl);
 
 ulEl.insertAdjacentHTML('beforeend', listEl);
 
-gallery.insertAdjacentHTML('afterbegin',createEl(images));
-gallery.style.marginTop = '20px';
-gallery.style.display = 'flex';
-gallery.style.justifyContent = 'space-between';
-gallery.style.padding = '0';
-gallery.style.listStyle = 'none';
+
+ulEl.style.marginTop = '30px';
+ulEl.style.display = 'block';
+ulEl.style.alighnItens = 'center';
+ulEl.style.padding = '0';
+ulEl.style.listStyle = 'none';
